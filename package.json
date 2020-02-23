@@ -1,0 +1,36 @@
+{
+  "name": "@atxmtx/title-mode",
+  "version": "0.0.0",
+  "description": "Appends indicator to document title if Atom is running in developer mode",
+  "license": "MIT OR GPL-2.0",
+  "scripts": {
+    "build": "tsc --pretty --project ./",
+    "dev": "tsc --watch --pretty --project ./",
+    "lint": "tslint --project ./",
+    "test": "npm run lint"
+  },
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atxmtx/title-mode.git"
+  },
+  "keywords": [
+    "atom",
+    "atom package"
+  ],
+  "dependencies": {
+    "@atxmtx/developer-console": "^0.1.1"
+  },
+  "devDependencies": {
+    "@types/atom": "^1.36.2",
+    "@types/node": "^13.7.0",
+    "husky": "^4.2.1",
+    "tslint": "^6.0.0",
+    "typescript": "^3.7.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  }
+}
