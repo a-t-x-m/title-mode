@@ -1,8 +1,8 @@
 'use strict';
 
-import { log } from '@atxmtx/developer-console';
+import { log } from '@atxm/developer-console';
 
-const meta = '@atxmtx/title-mode';
+const meta = '@atxm/title-mode';
 const suffix = ' [Developer Mode]';
 
 function titleMode(): void {
