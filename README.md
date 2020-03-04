@@ -1,1 +1,1 @@
-⚠️ This package has been deprecated. To get future versions, please install @atxm/title-mode instead.
+⚠️ This package has been deprecated. To get future versions, please install [@atxm/title-mode](https://www.npmjs.com/package/@atxm/title-mode) instead.
