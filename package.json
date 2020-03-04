@@ -1,6 +1,6 @@
 {
   "name": "@atxmtx/title-mode",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Appends indicator to document title if Atom is running in developer mode",
   "license": "MIT OR GPL-2.0",
   "scripts": {
