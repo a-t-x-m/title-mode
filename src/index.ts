@@ -5,7 +5,6 @@ const console = new DeveloperConsole({
   name: meta.name
 });
 
-
 const suffix = '[Developer Mode]';
 
 function titleMode(): void {
@@ -27,7 +26,7 @@ function modifyTitle(element): void {
   const view: HTMLElement = atom.views.getView(element);
 
   if (document.title && !document.title.endsWith(suffix)) {
-    console.log(`${meta}: Updating document title to '${document.title} ${suffix}'`);
+    console.log(`Updating document title to '${document.title} ${suffix}'`);
     document.title = `${document.title} ${suffix}`;
   }
 }
