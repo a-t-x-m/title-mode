@@ -1,9 +1,12 @@
 import DeveloperConsole from '@atxm/developer-console';
+import meta from '../package.json';
 
-const console = new DeveloperConsole();
+const console = new DeveloperConsole({
+  name: meta.name
+});
 
-const meta = '@atxm/title-mode';
-const suffix = ' [Developer Mode]';
+
+const suffix = '[Developer Mode]';
 
 function titleMode(): void {
   if (!atom.inDevMode()) return;
@@ -24,8 +27,8 @@ function modifyTitle(element): void {
   const view: HTMLElement = atom.views.getView(element);
 
   if (document.title && !document.title.endsWith(suffix)) {
-    console.log(`${meta}: Updating document title to '${document.title}${suffix}'`);
-    document.title = `${document.title}${suffix}`;
+    console.log(`${meta}: Updating document title to '${document.title} ${suffix}'`);
+    document.title = `${document.title} ${suffix}`;
   }
 }
 
